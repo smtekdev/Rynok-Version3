@@ -1,0 +1,145 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Login</title>
+<link rel="icon" type="image/x-icon" href="../assets/images/favicon.png"> 
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/sourcesanspro-font.css">
+
+<link rel="stylesheet" href="css/style.css">
+<meta name="robots" content="noindex, follow">
+</head>
+<body>
+<div class="page-content" style="background-image: black; width: 50%;" >
+<div class="form-v8-content">
+<!-- <div class="form-left">
+<img src="images/banner.jpg" alt="form">
+</div> -->
+<div class="form-right" style="background-color: #2e4d60;">
+<div class="tab">
+<div class="tab-inner">
+<button class="tablinks" onclick="openCity(event, 'sign-up')" id="defaultOpen">Sign Up</button>
+</div>
+<div class="tab-inner">
+<button class="tablinks" onclick="openCity(event, 'sign-in')">Sign In</button>
+</div>
+</div>
+<form class="form-detail" action="#" method="post">
+<div class="tabcontent" id="sign-up">
+<div class="form-row">
+<label class="form-row-inner">
+<input type="text" name="full_name" id="full_name" class="input-text">
+<span class="label">Username</span>
+<span class="border"></span>
+</label>
+</div>
+<div class="form-row">
+<label class="form-row-inner">
+<input type="text" name="your_email" id="your_email" class="input-text">
+<span class="label">Email Address</span>
+<span class="border"></span>
+</label>
+</div>
+<div class="form-row">
+	<label class="form-row-inner">
+	<input type="text" name="your_email" id="your_email" class="input-text">
+	<span class="label">Contact Number</span>
+	<span class="border"></span>
+	</label>
+	</div>
+<div class="form-row">
+<label class="form-row-inner">
+<input type="password" name="password" id="password" class="input-text">
+<span class="label">Password</span>
+<span class="border"></span>
+</label>
+</div>
+<div class="form-row">
+<label class="form-row-inner">
+<input type="password" name="comfirm_password" id="comfirm_password" class="input-text">
+<span class="label">Comfirm Password</span>
+<span class="border"></span>
+</label>
+</div>
+<div class="form-row-last">
+<input type="submit" name="register" class="register" value="Register" style="width: 100%;">
+<hr style="margin-top: -2%;"><br>
+
+
+<!-- <input type="submit" name="register" class="register" value="Vendor" style="width: 45%; margin-left: 2%;"> -->
+<a href="Vendor.html" style="background-color: #ffffff;color: rgb(0, 0, 0);  padding: 2.30% 19%; margin-left: 2%; text-decoration: none; border-radius: 5px;"><b>Vendor</b></a>
+<input type="submit" name="register" class="register" value="User" style="width: 45%; margin-left: 2%;">
+
+
+</div>
+</div>
+</form>
+<form class="form-detail" action="../user-dashboard.html" method="post">
+<div class="tabcontent" id="sign-in">
+<div class="form-row">
+<label class="form-row-inner">
+<input type="text" name="full_name_1" id="full_name_1" class="input-text">
+<span class="label">Username</span>
+<span class="border"></span>
+</label>
+</div>
+<div class="form-row">
+<label class="form-row-inner">
+<input type="text" name="your_email_1" id="your_email_1" class="input-text">
+<span class="label">Password</span>
+<span class="border"></span>
+</label>
+</div>
+
+<div class="form-row-last">
+<input type="submit" name="register" class="register" value="Sign In" style="width: 100%;">
+<hr><br>
+<a href="#" style="background-color: #ffffff;color: rgb(0, 0, 0);  padding: 2.30% 7%; margin-left: 2%; text-decoration: none; border-radius: 5px;"><b>Super Admin</b></a>
+
+<a href="../seller-dashboard.html" style="background-color: #ffffff;color: rgb(0, 0, 0);  padding: 2.30% 10%; margin-left: 3%; text-decoration: none; border-radius: 5px;"><b>Vendor</b></a>
+
+<a href="../user-dashboard.html" style="background-color: #ffffff;color: rgb(0, 0, 0);  padding: 2.30% 12%; margin-left: 3%; text-decoration: none; border-radius: 5px;"><b>User</b></a>
+
+<br>
+<center style="margin-top: 14%;">Sign In With Your Google Account</center>
+<input type="submit" name="register" class="register" value="Google" style="width: 45%; margin-left: 25%; margin-top: 4%; background-color: rgb(200, 69, 69); color: white;">
+</div>
+</div>
+</form>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+		function openCity(evt, cityName) {
+		    var i, tabcontent, tablinks;
+		    tabcontent = document.getElementsByClassName("tabcontent");
+		    for (i = 0; i < tabcontent.length; i++) {
+		        tabcontent[i].style.display = "none";
+		    }
+		    tablinks = document.getElementsByClassName("tablinks");
+		    for (i = 0; i < tablinks.length; i++) {
+		        tablinks[i].className = tablinks[i].className.replace(" active", "");
+		    }
+		    document.getElementById(cityName).style.display = "block";
+		    evt.currentTarget.className += " active";
+		}
+
+		// Get the element with id="defaultOpen" and click on it
+		document.getElementById("defaultOpen").click();
+	</script>
+
+<script async="" src="../../../gtag/js?id=UA-23581568-13"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23581568-13');
+</script>
+<script defer="" src="../../../beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon='{"rayId":"7a59b9b22c79de4f","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2023.2.0","si":100}' crossorigin="anonymous"></script>
+</body>
+</html>
